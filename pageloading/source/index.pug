@@ -6,31 +6,27 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title jQuery-pageloading
         link( type="text/css" rel="stylesheet", href="css/all.css")
-        link(href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet")
         script(src="https://code.jquery.com/jquery-3.4.1.min.js" 
                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
                crossorigin="anonymous" async)
+        //- script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" 
+        //-       integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        //-       crossorigin="anonymous" async)
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.5/velocity.js" async)
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.5/velocity.ui.min.js" async)
         script(rel="text/javascript" src="js/all.js" async)
     body
-        h2.monsterText Hello!!
-        .monster
-            .eye
-                .eyeball
-            .eye
-                .eyeball
-        .monster.brown
-            .eye
-                .eyeball
-            .eye
-                .eyeball
-                
-        .pageloading
-            .monster
-                .eye
-                    .eyeball
-                .eye
-                    .eyeball
-            .loading
-                .bar
+        .person
+            .girl
+                .red  
+                .leg
+            .boy
+                .blue
+                .leg
+        h2.title Hi
 
-        
+        .loading
+            .bow
+            .loadingBar
+                .bar
