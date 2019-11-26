@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title jQUERY-buylist
+        link( type="text/css" rel="stylesheet", href="css/all.css")
+        link(href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet")
+        
+    body
+        .box
+            h1 My buylist 購物清單
+            span.today 
+            .inputBar 
+                label 商品
+                input.nameInput(placeholder="要買什麼呢?")
+                label 價錢
+                input.priceInput(type="number" placeholder="100")
+                label 數量
+                input.numInput(type="number" placeholder="1" min="1")
+                button.addBtn 新增
+            ul.itemList
+                //- li
+                //-   .buyItem 洗髮精
+                //-   .price $100
+                //-   .symbol x
+                //-   .num 1000
+                //-   .symbol =
+                //-   .total $1000
+                //-   button.cancel x
+
+        script(src="https://code.jquery.com/jquery-3.4.1.min.js" 
+               integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+               crossorigin="anonymous")
+        script(rel="text/javascript" src="js/all.js")
+        

@@ -1,0 +1,89 @@
+$color_yellow: #ff00f2
+$color_dark_yellow: #00d8ff
+
+*
+  color: #344055
+  font-family: 'Ubuntu', 微軟正黑體
+
+
+html,body
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #9CAFB7
+
+.box
+  padding: 10px 15px
+  border-radius: 10px
+  box-shadow: 0 0 10px #344055
+  background-color: #E8EEF2
+  & h1
+    font-size: 35px
+    display: inline-block
+    margin-left: 10px
+  & .today
+    margin-left: 15px
+    font-size: 18px
+
+.inputBar
+  padding: 5px 10px
+  & input,label,button
+    font-size: 16px
+  & input
+    margin: 0 5px
+    padding: 2px
+    outline: none
+  & .nameInput
+    width: 100px
+  & .priceInput
+    width: 60px
+  & .numInput
+    width: 50px
+
+.priceInput::-webkit-outer-spin-button,.priceInput::-webkit-inner-spin-button
+  -webkit-appearance: none
+  
+.itemList
+  list-style: none
+  margin: 0
+  padding: 0
+  margin-top: 20px
+  font-size: 16px
+  & li 
+    border-bottom: dashed 1px
+    display: flex
+    padding: 10px
+    & .buyItem
+      width: 120px
+    & .price
+      width: 60px
+      text-align: right
+    & .symbol
+      margin: 0 20px
+    & .num
+      width: 20px
+    & button[class^=cancel]
+      margin-left: auto
+      line-height: 16px
+  & .finTotal
+    font-weight: 800
+    & .toPrice
+      margin-left: auto
+      margin-right: 80px
+      color: #D782BA
+      padding: 2px 5px
+
+button
+  background-color: transparent
+  border: solid 1px
+  outline: none
+  &:hover
+    cursor: pointer
+    color: #D782BA
+  &:active
+    transform: translateY(1px)
+  
